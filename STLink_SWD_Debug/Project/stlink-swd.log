@@ -1,0 +1,38 @@
+[stm32f1x.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000228 msp: 0x20005000
+Breakpoint 1 at 0x8000210: file src/main.c, line 15.
+Note: automatically using hardware breakpoints for read-only addresses.
+Last stopped for thread 1 (Remote target).
+	`/home/dung/Documents/Arm/BluePill_learning/STM32F1-BluePill-Learning/STLink_SWD_Debug/Project/build/firmware.elf', file type elf32-littlearm.
+	Entry point: 0x8000228
+	0x08000000 - 0x0800010c is .isr_vector
+	0x0800010c - 0x0800026e is .text
+	0x20000000 - 0x20000000 is .data
+	0x20000000 - 0x20000004 is .bss
+Program stopped at 0x8000228.
+It stopped with signal SIGINT, Interrupt.
+Type "info stack" or "info registers" for more information.
+pc             0x8000228           0x8000228 <Reset_Handler>
+msp            0x20005000          0x20005000
+lr             0xffffffff          0xffffffff
+Continuing.
+
+Breakpoint 1, main () at src/main.c:15
+15	    known_var = 0x12345678u;
+pc             0x8000210           0x8000210 <main>
+msp            0x20005000          0x20005000
+lr             0x8000257           0x8000257
+$1 = 0x0
+halted: PC: 0x08000212
+halted: PC: 0x08000214
+halted: PC: 0x08000216
+halted: PC: 0x08000218
+16	    checkpoint();
+$2 = 0x12345678
+pc             0x8000218           0x8000218 <main+8>
+msp            0x20004ff8          0x20004ff8
+lr             0x8000257           0x8000257
+halted: PC: 0x0800020c
+checkpoint () at src/main.c:10
+10	    __asm volatile ("nop");
+0x8000000:	0x20005000	0x08000229	0x0800026d	0x0800026d

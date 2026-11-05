@@ -1,0 +1,37 @@
+dung@debian:~/Documents/Arm/BluePill_learning/STM32F1-BluePill-Learning/STLink_SWD_Debug/Project$ openocd -f openocd.cfg 
+Open On-Chip Debugger 0.12.0
+Licensed under GNU GPL v2
+For bug reports, read
+        http://openocd.org/doc/doxygen/bugs.html
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 1000 kHz
+Info : STLINK V2J45S7 (API v2) VID:PID 0483:3748
+Info : Target voltage: 3.264447
+Info : [stm32f1x.cpu] Cortex-M3 r1p1 processor detected
+Info : [stm32f1x.cpu] target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32f1x.cpu on 3333
+Info : Listening on port 3333 for gdb connections
+[stm32f1x.cpu] halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x0800021c msp: 0x20004ff8
+Info : accepting 'gdb' connection on tcp/3333
+Info : device id = 0x20036410
+Info : flash size = 64 KiB
+Warn : Prefer GDB command "target extended-remote :3333" instead of "target remote :3333"
+[stm32f1x.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000228 msp: 0x20005000
+Info : halted: PC: 0x08000212
+[stm32f1x.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000228 msp: 0x20005000
+Info : dropped 'gdb' connection
+Info : accepting 'gdb' connection on tcp/3333
+[stm32f1x.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000228 msp: 0x20005000
+Info : halted: PC: 0x08000212
+Info : halted: PC: 0x08000214
+Info : halted: PC: 0x08000216
+Info : halted: PC: 0x08000218
+Info : halted: PC: 0x0800020c
